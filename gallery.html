@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Sidhant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-outline"></div>
 
-<nav>
-    <h1 class="logo">Sidhant</h1>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a class="active" href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+  <header class="nav-ctn">
+    <div class="brand">Sidhant Singh Manral</div>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="gallery.html" class="nav-link active">Gallery</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
 
-<section class="page">
-    <h1>My Gallery</h1>
+  <main class="container">
+    <section class="glass page">
+      <h1>Gallery / Portfolio</h1>
+      <p>Click any image to open a larger view.</p>
 
-    <div class="grid">
-        <img src="images/img1.jpg" alt="">
-        <img src="images/img2.jpg" alt="">
-        <img src="images/img3.jpg" alt="">
-    </div>
-</section>
+      <div class="grid gallery-grid">
+        <div class="thumb"><img src="images/img1.jpg" alt="" onerror="this.style.opacity='.4'"></div>
+        <div class="thumb"><img src="images/img2.jpg" alt=""></div>
+        <div class="thumb"><img src="images/img3.jpg" alt=""></div>
+        <div class="thumb"><img src="images/img4.jpg" alt=""></div>
+        <div class="thumb"><img src="images/img5.jpg" alt=""></div>
+        <div class="thumb"><img src="images/img6.jpg" alt=""></div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="glass footer">
+    <div>© <span id="year3"></span> Sidhant</div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
