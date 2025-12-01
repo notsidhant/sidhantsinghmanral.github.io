@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Sidhant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-outline"></div>
 
-<nav>
-    <h1 class="logo">Sidhant</h1>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+  <header class="nav-ctn">
+    <div class="brand">Sidhant Singh Manral</div>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
 
-<section class="page">
-    <h1>About Me</h1>
-    <p>
-        Hi, I'm Sidhant from CE-B. I’m passionate about learning, exploring technology,
-        building creative projects, and constantly improving myself.  
-        This website represents my journey, interests, hobbies, and the things I enjoy creating.
-    </p>
-</section>
+  <main class="container">
+    <section class="glass page">
+      <h1>About Me</h1>
+      <p>
+        Hi — I'm <strong>Sidhant Singh Manral</strong>, CE-B. I enjoy building websites,
+        experimenting with UI design and learning full stack technologies.
+        I make small projects that help me learn faster and demonstrate my skills.
+      </p>
 
+      <h2>Interests &amp; Hobbies</h2>
+      <ul>
+        <li>Web & UI design</li>
+        <li>Photography</li>
+        <li>Open-source projects</li>
+        <li>Problem solving & coding</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="glass footer">
+    <div>© <span id="year2"></span> Sidhant</div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
