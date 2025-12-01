@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Sidhant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-outline"></div>
 
-<nav>
-    <h1 class="logo">Sidhant</h1>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a class="active" href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+  <header class="nav-ctn">
+    <div class="brand">Sidhant</div>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+  </header>
 
-<section class="contact-page">
-    <h1>Contact Me</h1>
+  <main class="container">
+    <section class="glass page contact-page">
+      <h1>Contact Me</h1>
+      <p>Send a message — form validates the email and required fields.</p>
 
-    <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send</button>
-    </form>
+      <form id="contactForm" novalidate>
+        <label>
+          <input type="text" id="name" placeholder="Your name" required>
+        </label>
+        <label>
+          <input type="email" id="email" placeholder="Your email" required>
+        </label>
+        <label>
+          <textarea id="message" placeholder="Your message" rows="6" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <button type="reset" class="btn ghost">Reset</button>
+        </div>
 
-    <p id="response"></p>
-</section>
+        <p id="formMsg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
 
-<script src="js/script.js"></script>
+  <footer class="glass footer">
+    <div>© <span id="year4"></span> Sidhant</div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
