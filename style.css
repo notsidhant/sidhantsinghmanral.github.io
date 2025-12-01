@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d0d0d;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #111;
+    border-bottom: 2px solid #00eaff;
+}
+
+.logo {
+    color: #00eaff;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #00eaff;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 span {
+    color: #00eaff;
+}
+
+.btn {
+    padding: 12px 25px;
+    margin-top: 20px;
+    display: inline-block;
+    background: #00eaff;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* PAGES */
+
+.page {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* GALLERY */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 30px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #00eaff;
+}
+
+/* CONTACT */
+
+.contact-page {
+    padding: 50px;
+    text-align: center;
+}
+
+input, textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #00eaff;
+    background: #111;
+    color: white;
+    border-radius: 5px;
+}
+
+button {
+    background: #00eaff;
+    padding: 10px 25px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #00c2cc;
+}
